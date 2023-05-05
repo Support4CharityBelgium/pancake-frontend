@@ -845,6 +845,14 @@ export const whitelistedBidders: FarmAuctionBidderConfig[] = [
     tokenName: 'QUO',
     projectSite: 'https://quoll.finance/',
   },
+  {
+    account: '0xDCDeCf197f57E6a5fDE2957e7305f533d622fbf1',
+    farmName: 'CHRT-BNB',
+    tokenAddress: '0xd8593afa1fde863c8adf88342453640282d03582',
+    quoteToken: bscTokens.wbnb,
+    tokenName: 'Spintop',
+    projectSite: 'https://chrtcrypto.network/',
+  },
 ].map((bidderConfig) => ({
   ...bidderConfig,
   lpAddress: getLpAddress(bidderConfig.tokenAddress, bidderConfig.quoteToken),
